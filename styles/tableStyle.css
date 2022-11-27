@@ -1,0 +1,40 @@
+/**Yu Hua Yang, 2133677 --- Charles-Alexandre Bouchard, 2135704*/
+table{
+    background-color: white;
+    border-width: 1px;
+    border-style: dotted;
+    border-color: red;
+    width: 100%;
+}
+th{
+    color:white;
+    background-color: darkgreen;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 10px;
+}
+
+tr{
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    margin: 1px;
+}
+
+td{
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+tr:nth-child(even){
+    background-color: gainsboro;
+}
+
+tr > td > img{
+    width: 30px;
+    height: 30px;
+    padding: 3%;
+}
+

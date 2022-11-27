@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!-- Yu Hua Yang, 2133677-->
+<!-- Charles-Alexandre Bouchard, 2135704-->
+<!--made by Yu-Hua Yang-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project 1-show case academic projects</title>
+    <script src="../js/utilities.js"></script>
+    <script src="../js/manage_projects.js"></script>
+    <script src="../js/main_program.js"></script>
+    <link href="../styles/formStyle.css" type="text/css" rel="stylesheet">
+    <link href="../styles/page.css" type="text/css" rel="stylesheet">
+    <link href="../styles/tableStyle.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <section id="main_container">
+        <header>
+            <p>420-320 Project 1-show case academic projects</p>
+        </header>
+
+        <section id="middle_section">
+            <section id="top_section">
+                <form method="get" action=".">
+                    <fieldset id="all_fields">
+                        <legend>Fill In all required fields</legend>
+                        <div class="field_col">
+                            <div id="project_id_div" class="single_field">
+                                <label for="project_id" >Project Id</label>
+                                <input type="text" id="project_id" name="project_id" minlength="2">
+                            </div>
+                            <br>
+                            <span id="project_id_span"></span>
+                            <div id= "owner_name_div" class="single_field">
+                                <label for="owner_name">Owner Name</label>
+                                <input type="text" id="owner_name" name="owner_name" minlength="4">
+                            </div>
+                            <br>
+                            <span id="owner_name_span"></span>
+                        </div>
+                        <div class="field_col">
+                            <div id="title_div" class="single_field">
+                                <label for="title">Title</label>
+                                <input type="text" id="title" name="title">
+                            </div>
+                            <br>
+                            <span id="title_span"></span>
+                            <div id="category_div" class="single_field">
+                                <label for="category">Category</label>
+                                <select id="category" >
+                                    <option selected value="-------">-------</option>
+                                    <option value="practical">practical</option>
+                                    <option value="theoretical">theoretical</option>
+                                    <option value="fundamental research">fundamental research</option>
+                                    <option value="empirical">empirical</option>
+                                </select>
+                            </div>
+                            <br>
+                            <span id="category_span"></span>
+                        </div>
+                        
+                        <div class="field_col">
+                            <div id="hours_div" class="single_field">
+                                <label for="hours">Hours</label>
+                                <input type="number" id="hours" name="hours" min="0">
+                            </div>
+                            <br>
+                            <span id="hours_span"></span>
+                            <div id="rate_div" class="single_field">
+                                <label for="rate">Rate</label>
+                                <input type="number" id="rate" name="rate" min="0">
+                            </div>
+                            <br>
+                            <span id="rate_span"></span>
+                            <div id="status_div" class="single_field">
+                                <label for="status">Status</label>
+                                <select id="status">
+                                    <option selected value="-------">-------</option>
+                                    <option value="completed">completed</option>
+                                    <option value="ongoing">ongoing</option>
+                                    <option value="planned">planned</option>
+                                </select>
+                            </div>
+                            <br>
+                            <span id="status_span"></span>
+                            </div> 
+                            <div  class="field_col">
+                                <div id="short_description_div" class="single_field" id="single_field_textbox">
+                                    <label for="short_description">Short Description</label>
+                                    <textarea id="short_description" name="short_description" rows="4" cols="15" ></textarea>
+                                </div>
+                                <br>
+                            <span id="short_description_span"></span>
+                        </div>
+                    </fieldset>
+            </form>
+                <div id="form_buttons">
+                    <input type="button" value="Add" id="add_btn">
+                    <input type="button" value="Reset" id="reset_btn"> 
+                </div>
+                </section>
+                <section id="main-section">
+                    <div id="table_buttons">
+                        <input type="button" value="Write (save) local" id="write_btn">
+                        <input type="button" value="Append local" id="append_btn">
+                        <input type="button" value="Clear local" id="clear_btn">
+                        <input type="button" value="Load (read) local" id="load_btn">
+                </div>
+             
+                <input type="text" id="query" name="query" minlength="2" size="100" placeholder="  Enter your query...">
+                
+                <p id="status_bar"></p>
+                <section id="table_render-space">
+                    <table id="generated_table">
+                        <thead>
+                            <th>proj_id</th>
+                            <th>owner</th>
+                            <th>proj_title</th>
+                            <th>proj_category</th>
+                            <th>nber_hours</th>
+                            <th>rate</th>
+                            <th>proj_status</th>
+                            <th>proj_descr</th>
+                            <th>edit</th>
+                            <th>delete</th>
+                        </thead>
+                    </table>
+                </section>
+            </section>
+        </section>
+
+        <footer>
+            <p>Yu Hua Yang, 2133677, Charles-Alexandre Bouchard, 2135704, Section 1, copyright &copy; Fall 2022</p>
+        </footer>
+    </section>
+
+    
+</body>
+</html>

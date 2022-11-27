@@ -1,0 +1,125 @@
+/**Yu Hua Yang, 2133677 --- Charles-Alexandre Bouchard, 2135704*/
+form {
+    display: flex;
+    max-width: 100%;
+    padding: 2%;
+    padding-bottom: 0%;
+    background-color: beige;
+    margin: 0%;
+    justify-content: center;
+}
+
+fieldset {
+    width: 90%;
+    margin: 5px;
+    padding: 10px;
+    font-size: larger;
+    border-color: lightgray;
+    border-width: 1px;
+}
+
+label { 
+    width: 100px;
+    background-color: ghostwhite;
+    border-color: red;
+    border-style: dotted;
+    border-width: 1px;
+    font-size: medium;
+}
+
+.field_col {
+    border-width:1px ;
+    border-style: dotted;
+    border-color: green;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    
+}
+
+.single_field{
+    background-color: aliceblue;
+    margin: 2%;
+    padding: 1% 5% 1% 1%;
+    display: flex;
+    flex-direction: row;
+}
+
+legend{
+    background-color: lightcyan;
+    color: brown;
+    text-align: left;
+}
+
+input , select{
+    width: 85%;
+  }
+
+#single_field_textbox{
+    display: block;
+}
+
+#single_field_textbox > label{
+    float: left;
+}
+
+#short_description{
+    width: 100%;
+}
+
+.single_field > label {
+    width:100px;
+    text-align: right;
+}
+
+fieldset {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+input:hover{
+    border-color: gainsboro;
+}
+
+input:focus , #short_description:focus{
+    outline: none !important;
+    border-color:dodgerblue;
+    box-shadow: 0 0 2px dodgerblue;
+}
+
+select{
+    background-color: gainsboro;
+    border-radius: 5px;
+}
+
+select:hover{
+    background-color: gray;
+}
+
+.validation_images{ 
+    width: 25px;
+    height: 25px;
+    align-items: center;
+}
+
+#add_btn:disabled {
+    background-color: darkgray;
+}
+
+form {
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+span > p {
+    font-size: small;
+    text-align: left;
+    background-color: red;
+    color: white;
+}
+
+#all_fields {
+    display: flex;
+    flex-wrap: wrap;
+}
+

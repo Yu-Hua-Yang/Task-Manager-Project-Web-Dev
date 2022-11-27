@@ -1,0 +1,114 @@
+/**Yu Hua Yang, 2133677 --- Charles-Alexandre Bouchard, 2135704*/
+#main_container {
+    width: 80%;
+    text-align: center;
+    padding: 20px;
+    background-color: lavender;
+    margin: auto;  
+}
+
+header, footer {
+    background-color: purple;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: 1% 0;
+    padding: 20px;
+    font-size:x-large;
+}
+
+header > p, footer> p {
+    flex: 1;
+    font-size: large; 
+    font-weight: bold;
+} 
+
+#middle-section {
+    background-color: #a9a9a9;
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    max-width: 100%;
+    border-color:black ;
+    border-width:2px ;
+    border-style: solid;
+}
+
+#top-section {
+    background-color: lightgray;
+    justify-content: center;
+    padding: 2% 1% 2% 1%;
+    font-family: 'comic sans ms';
+    font-weight: bold;
+    max-width: 100%;
+}
+
+#main-section {
+    background-color: teal;
+    flex-direction: column;
+    align-items: stretch;
+    display: flex;
+    justify-content: center;
+    padding: 1% 10px 10px 10px;
+}
+
+#table-render-space {
+    background-color: white;
+    padding: 1% 1px 1px 1px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    overflow: auto;
+}
+
+footer{
+    display: block;
+}
+
+#form_buttons{
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background-color: beige;
+    padding-top: 0%;
+    padding-bottom: 3%;
+
+}
+
+input[type="button"], input[type="reset"] {
+    color: white;
+    background-color: steelblue;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    width: 20%;
+    border-bottom-color: #a9a9a9;
+    border-right-color: #a9a9a9;
+    height: 40px;
+    font-size: medium;
+    font-weight: bold;
+}
+
+
+#table_buttons{
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding-top: 0%;
+    padding-bottom: 3%;
+}
+
+#query{
+    width: 60%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    height: 40px;
+    padding: 0;
+    margin-bottom: 1%;
+    font-size: large;
+
+}
